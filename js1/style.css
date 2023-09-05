@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#slider{
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+}
+#slider .prev,#slider .next{
+    cursor: pointer;
+}
+.photos{
+    position: relative;
+    height: 670px;
+}
+.photos img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+.photos img.showed{
+    opacity: 1;
+}
